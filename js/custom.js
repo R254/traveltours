@@ -8,7 +8,7 @@ M.Slider.init(slider, {
 	indicators:false,
 	height:500,
 	transition:500,
-	interval:6000
+	interval:3600
 });
 
 // Autocomplete
@@ -24,10 +24,14 @@ M.Autocomplete.init(ac, {
       }
 });
 
-// Material Boxed
+// Material Boxed... Gallary zoom feature
 const mb = document.querySelectorAll('.materialboxed');
 M.Materialbox.init(mb, {});  
 
 // Scrollspy
 const ss = document.querySelectorAll('.scrollspy');
-M.ScrollSpy.init(ss, {});     
+M.ScrollSpy.init(ss, {});
+
+// Date Picker
+const dp = document.querySelectorAll('.datepicker');
+M.Datepicker.init(dp, {});
